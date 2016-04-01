@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+
+<body>
+    <form name = "edit" action = "{% url 'accounts:info_edit' %}" method = "post" >
+        {%csrf_token%}
+        nickname<input type = "text" name = "nick_name" value = "{{nick_name}}"/>
+        phonenum<input type = "text" name = "phone_num" value = "{{phone_num}}"/>
+        work<input type = "text" name = "work" value = "{{work}}"/>
+        email<input type = "text" name = "email" value = "{{email}}"/> 
+        <input type = "submit" value = "submit">
+    </form>
+</body>
+</html>
